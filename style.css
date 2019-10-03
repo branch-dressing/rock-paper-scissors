@@ -1,0 +1,14 @@
+body {
+    background-color: rgb(0, 151, 139);
+    width: 600px;
+}
+
+.radio {
+    visibility: hidden;
+}
+
+#rules {
+    display: flex;
+    flex-direction: column
+}
+
