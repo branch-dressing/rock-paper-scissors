@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Rock! Paper! Scissors!</h1>
+
+    <section id="rules">
+        <h2>Rules</h2>
+        <ul>
+            <li>Select how much money you would like to bet.</li>
+            <li>Make a selection between Rock, Paper, or Scissors.</li>
+            <li>When you are ready press the "FIGHT!" button.</li>
+        </ul>
+        <hr>
+    </section>
+
+    <section id="betting">
+        <span id="available-money">Money: $<span id="current-money"></span></span>
+        <span id="betting-location">Amount to bet: $<input type="number"></span>
+        <span id="wins-losses">Amount <span id="money-results"></span></span>
+    </section>
+
+    <section id="player-options">
+        <img src="Rock">
+        <imq src="Paper">
+        <img src="Scissors">
+    </section>
+
+    <section id="battleground">
+        <img src="Player's Selcetion">
+        <span id="vs">V.S.</span>
+        <img src="Comp's Selection">
+    </section>
+
+    <div id="button">
+        <button id="fight">FIGHT!</button>
+    </div>
+
+    <script type="module" src="app.js"></script>
+</body>
+
+
+</html>
