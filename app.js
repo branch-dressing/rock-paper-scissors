@@ -1,4 +1,4 @@
-import { getThrowFromNumber, getThrow } from './get-throw.js';
+import { getThrowFromNumber } from './get-throw.js';
 import didPlayerWin from './did-player-win.js';
 import { changeToRock, changeToPaper, changeToScissors } from './change-images.js';
 
