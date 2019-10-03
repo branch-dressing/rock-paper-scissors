@@ -5,7 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap');
+        </style>
     <title>Rock Paper Scissors</title>
 </head>
 
@@ -15,56 +18,75 @@
     <section id="rules">
         <h2>Rules</h2>
         <ul>
-            <li>Select how much money you would like to bet.</li>
-            <li>Make a selection between Rock, Paper, or Scissors.</li>
-            <li>When you are ready press the "FIGHT!" button.</li>
+            <li>Rock beats Scissors</li>
+            <li>Paper beats Rock</li>
+            <li>Scissors beats Paper</li>
+            <li>Click image to choose</li>
+            <li>Click "FIGHT!" when ready</li>
         </ul>
     </section>
     <hr>
-    
-    <section id="betting">
-        <span id="available-money">
-        <img src="http://pixelartmaker.com/art/29c8a912b2de2d5.png" width="30px" height="30px"
-        <span id="current-money">100</span>
-        </span>
-        <span id="betting-location">Amount to bet: $<input type="number"></span>
-        <span id="wins-losses">Amount <span id="money-results"></span></span>
-    </section>
 
+    <h3>Inventory</h3>
     <section id="player-options">
         <label id="rocks">
-            <input class="radio" name="rps" value="rock" type="radio" checked>
-            <img src="http://pixelartmaker.com/art/da268f06e621b21.png" width="150px" height="150px">
+            <input class="radio" name="rps" value="Rock" type="radio" checked>
+            <img id="rock-img" src="http://pixelartmaker.com/art/da268f06e621b21.png" width="150px" height="150px">
         </label>
 
         <label id="papers">
-            <input class="radio" name="rps" value="paper" type="radio" checked>
-            <img src="http://pixelartmaker.com/art/5acc67294cb507c.png" width="150px" height="150px">
+            <input class="radio" name="rps" value="Paper" type="radio" checked>
+            <img id="paper-img" src="http://pixelartmaker.com/art/5acc67294cb507c.png" width="150px" height="150px">
         </label>
 
         <label id="scissors">
-            <input class="radio" name="rps" value="scissors" type="radio" checked>
-            <img src="https://pbs.twimg.com/media/D7mSLOMUIAAGYfa.png" width="150px" height="150px">
+            <input class="radio" name="rps" value="Scissors" type="radio" checked>
+            <img id="scissors-img" src="https://pbs.twimg.com/media/D7mSLOMUIAAGYfa.png" width="150px" height="150px">
         </label>
     </section>
 
     <section id="battleground">
         <label id="player-selection">
-            Player<img id="player-selection-img" src="https://tr.rbxcdn.com/d49a1ed85c55f18e053de3dc8a65c831/420/420/Decal/Png" width="200px" height="200px">
+            <img id="player-selection-img" src="https://tr.rbxcdn.com/d49a1ed85c55f18e053de3dc8a65c831/420/420/Decal/Png" width="200px" height="200px">
+            <h4>Player</h4>
         </label>
 
+        <label id="middleground">
         <span id="vs">V.S.</span>
+            <div id="button">
+                <button id="fight">FIGHT!</button>
+            </div>
+        </label>
 
         <label id="computer-selection">
-            Computer<img id="computer-selection-img" src="https://tr.rbxcdn.com/d49a1ed85c55f18e053de3dc8a65c831/420/420/Decal/Png" width="200px" height="200px">
+            <img id="computer-selection-img" src="https://tr.rbxcdn.com/d49a1ed85c55f18e053de3dc8a65c831/420/420/Decal/Png" width="200px" height="200px">
+            <h4>Computer</h4>
         </label>
 
     </section>
+    
+    <section id="stats">
+        <div class="stat-col">
+            <h5>Results</h5>
+            <span id="result">Text here</span>
+        </div>
 
-    <div id="button">
-        <button id="fight">FIGHT!</button>
-    </div>
+        <div class="stat-col"></div>
+            <h5>Wins</h5>
+            <span id="wins">0</span>
+        </div>
 
+        <div class="stat-col"></div>
+            <h5>Losses</h5>
+            <span id="losses">0</span>
+        </div>
+
+        <div class="stat-col"></div>
+            <h5>Ties</h5>
+            <span id="ties">0</span>
+        </div>
+    </section>
+    
     <script type="module" src="app.js"></script>
 </body>
 
