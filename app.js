@@ -7,7 +7,6 @@ document.getElementById('paper-img').addEventListener('click', changeToPaper);
 document.getElementById('scissors-img').addEventListener('click', changeToScissors);
 
 const fightButton = document.getElementById('fight');
-//const selectedRadioButton = document.querySelector('input:checked');
 
 const rockPaperScissorsGo = () => {
     const playerSelection = document.querySelector('input:checked').value;

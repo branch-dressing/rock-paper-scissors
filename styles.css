@@ -47,7 +47,9 @@ h4 {
 }
 
 h5 {
-    font-size: 25px
+    font-size: 25px;
+    margin: 10px;
+    padding: 10px;
 }
 
 ul {
@@ -114,6 +116,16 @@ ul {
     display: flex;
     justify-content: space-around;
 }
+
+.stat-col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px;
+    padding: 10px;
+}
+
 
 
 
