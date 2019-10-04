@@ -95,7 +95,8 @@ ul {
     font-size: 60px;
 }
 
-#fight {
+#fight, 
+#reset-button {
     background-color: #e69908;
     font-size: 20px;
     color: #e43300;
@@ -105,6 +106,11 @@ ul {
     border-block-start-color: #e43300;
     border-left-color: #e43300;
     border-right-color: black;
+}
+
+#reset {
+    display: flex;
+    justify-content: flex-end;
 }
 
 #stats {
