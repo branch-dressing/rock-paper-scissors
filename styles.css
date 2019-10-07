@@ -14,7 +14,7 @@ h1 {
 
 h2 {
     margin: 10px;
-    color: #e69908;
+    color: black;
     display: flex;
     justify-content: center;
     border: solid 10px;
@@ -27,6 +27,7 @@ h2 {
     width: 100px;
     font-family: 'Permanent Marker';
     align-items: center;
+    background-color: #e69908
 }
 
 h3 {
@@ -36,6 +37,7 @@ h3 {
     font-size: 22px;
     border: solid 5px;
     width: 97px;
+    background-color: #008277;
 }
 
 h4 {
@@ -64,7 +66,7 @@ button:hover {
 
 #paper-img:hover, #rock-img:hover, #scissors-img:hover {
     cursor: pointer;
-    background-color: #008277
+    background-color:rgba(0, 0, 0, 0.3);
 }
 
 #player-options {
@@ -73,7 +75,8 @@ button:hover {
     border: solid 5px;
     padding: 1px;
     margin-top: 10px;
-    margin-bottom: 10px
+    margin-bottom: 10px;
+    background-color: #008277;
 }
 
 .radio {
@@ -130,6 +133,7 @@ button:hover {
     margin-top: -12px;
     display: flex;
     justify-content: space-around;
+    background-color: #008277;
 }
 
 .stat-col {
@@ -139,6 +143,10 @@ button:hover {
     flex-direction: column;
     margin: 10px;
     padding: 10px;
+}
+
+#reset {
+    text-align: right;
 }
 
 #reset-button {
